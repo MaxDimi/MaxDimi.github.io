@@ -1,0 +1,41 @@
+---
+title: "Pushroom" #TODO pictogram
+layout: post
+date: 2017-04-30 10:00
+tag:
+- Entrepreneurship
+- Prototyping
+- Python
+- Raspberry Pi
+image: assets/images/pushroom_logo.png # TODO picture
+image-external: false
+headerImage: true
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "Prototyping a connected button-pusher."
+category: project
+#author: johndoe
+externalLink: false
+---
+
+Prototyping a connected button-pusher.
+
+---
+
+Before working on [Sunseï]({{site.url}}/Sunsei), I had the idea with a friend to develop Pushroom, a connected button-pusher.
+The goal was to be able to turn (almost) any existing appliance into a connected object, by adding a small adaptator to it
+that would press its button when prompted.
+We also wanted to allow the pushers to interact with each other.
+You could for example connect your alarm clock and your coffee machine.
+That way, when you woke up and stopped the alarm clock, your coffee would start heating up, offering you those extra 2 minutes of bedtime we all want.
+
+Being both engineering students, we quickly decided to build a prototype, and took part in a hackathon organised by the [Microsoft Innovation Center](http://www.mic-belgique.be) in Mons, Belgium.
+With the help of another friend, and with the available hardware, we tried to get a working result in 24 hours.
+We decided to focus on light switches, as well as on a switch that opened a sliding door to access the building.
+
+<center><img class="image" src="{{ site.url }}/assets/images/pushroom_gif.gif" alt="Alt Text"></center>
+
+As a result, we built a frame that could be firmly attached to a switch while also being easy to remove.
+We included a servo-motor that could turn both ways to turn the lights on and off.
+We moved the motor and connected the pusher to the local wifi through a Raspberry Pi, which was powered by a portable battery.
+Finally, everything was controlled via an Android app we built on the spot.

@@ -1,0 +1,55 @@
+---
+title: "Analyzing IRA tweets" #TODO pictogram
+layout: post
+date: 2019-01-21 10:00
+tag:
+- Data Science
+- Python
+- Pandas
+- Spark
+image: assets/images/trolltweet.png # TODO picture
+image-external: false
+headerImage: true
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "Analyzing tweets created by Russian trolls to influence politics in the USA and in Ukraine."
+category: project
+#author: johndoe
+externalLink: false
+---
+
+Analyzing tweets created by Russian trolls to influence politics in the USA and in Ukraine.
+[Read the full data story.](https://abaracadacabara.github.io)
+
+---
+
+For the final project of the [Applied Data Analysis](https://dlab.epfl.ch/teaching/fall2018/cs401/) course at EPFL,
+I worked with two friends on a [Twitter dataset](https://about.twitter.com/en_us/values/elections-integrity.html#data) containing around 10 million troll tweets written by the [Internet Research Agency (IRA)](https://en.wikipedia.org/wiki/Internet_Research_Agency).
+
+We wanted to dig into the data to discover a strategy behind those tweets and to determine the impact they had.
+We mainly focused on posts written in English, which mostly concern American politics, and the 2016 presidential elections.
+We also took a look at Russian messages, which speak a lot about Ukraine.
+This allowed us to compare the behavior of the trolls in two different contexts.
+
+The full [data story](https://abaracadacabara.github.io) contains our detailed analysis and results.
+
+In short, we conducted our observations along three axis:
+- **Temporal analysis**: We compared the activity of the trolls with the major events happening in the world.
+Peaks of activity often correspond to important events: war in Ukraine, Hillary Clinton email controversy, Putin's reelection...
+It also appears that the number of troll accounts grew drastically in 2014.
+- **Textual analysis**: A first look at the contents of the tweets proved that the vocabulary of the trolls is different from the average user: "Trump" is their favorite word!
+Then, we performed a sentiment analysis.
+The results were mostly even between Trump, Obama and Hillary, although slightly more positive towards Trump.
+However, when comparing Russia and Ukraine, we can see that the trolls are much more negative towards Ukraine.
+- **Relationships analysis**: We observed the relations of the trolls both with other trolls and with the rest of Twitter through retweets.
+There is a clear difference of behavior between the two "species".
+Russian speaking accounts focus on spreading (fake) news issued by Russian media agencies.
+Interestingly, most of those agencies have undergone major changes around 2014.
+English speaking trolls attempt to look more human, they do not talk exclusively about politics.
+They are also much more diverse: there are different categories of accounts, with different political opinions.
+
+As a conclusion, we found it was hard to really measure the impact of IRA, although we could see they managed to spread their messages outside of their network.
+Some trolls even [interacted with relatives of Trump](https://www.washingtonpost.com/news/politics/wp/2017/11/02/at-least-five-people-close-to-trump-engaged-with-russian-twitter-trolls-from-2015-to-2017/?utm_term=.b6930f43d394).
+It is however much easier to observe a clear strategy behind the tweets.
+Russian speaking accounts attempt to flood Twitter with propaganda messages ;
+English speaking accounts try to divide people by confronting conflicting opinions.

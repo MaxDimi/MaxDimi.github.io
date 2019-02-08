@@ -1,0 +1,23 @@
+---
+title: "Analyzing Sonos data" #TODO pictogram
+layout: post
+date: 2019-01-27 22:10
+tag:
+- Data Science
+- Python
+- Pandas
+- Spark
+image: assets/images/trolltweet.png # TODO picture
+image-external: false
+headerImage: true
+projects: false #TODO
+hidden: true # don't count this post in blog pagination
+description: "Analyzing data collected on the Sonos system at home."
+category: project
+#author: johndoe
+externalLink: false
+---
+
+Analyzing data collected on the Sonos system at home.
+
+---

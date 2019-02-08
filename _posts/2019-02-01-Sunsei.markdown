@@ -1,0 +1,51 @@
+---
+title: "Sunseï" #TODO pictogram
+layout: post
+date: 2019-02-01 10:00
+tag:
+- Entrepreneurship
+- Prototyping
+- Python
+- Raspberry Pi
+- IoT
+image: assets/images/sunsei_logo.png # TODO picture
+image-external: false
+headerImage: true
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "Building and selling a smart energy monitor for solar panels."
+category: project
+#author: johndoe
+externalLink: false
+---
+
+Building and selling a smart energy monitor for solar panels.
+Visit our [website](www.sunsei.be) for more info.
+
+---
+
+While working on [Pushroom]({{site.url}}/Pushroom) with a friend, we got hooked on IoT and the possibilities it offers.
+We decided to move on from the small gadget that the previous project was to work on helping the owners of photovoltaic systems to better use their electricity.
+
+The problem is fairly simple: solar panels produce energy during the day, while people tend to consume it in the evening.
+This causes extensive exchanges between the house and the grid: first to inject the excess of electricity produced, and then a second time to pump back electricity from the grid.
+This leads to increased costs for the network manager.
+Therefore, most countries are implementing strategies to compensate those costs, and they generally require the households to pay for their use of the grid.
+
+The best way to ensure the profitability of a photovoltaic system is to maximize self-consumption: that is to directly consume the electricity produced, without using the grid.
+Two strategies (which can be combined) exist: shifting the supply, or shifting the demand.
+The first is usually done with batteries that store electricity during the day to be used later.
+For our project, we decided to focus on the second.
+
+Sunseï is a smart monitor for solar panels.
+It takes into account the weather forecast and the real-time production/consumption of the house to determine the optimal time to use different appliances.
+In the morning, or the day before, the house occupants set up those appliances (e.g. washing machine, dryer, dishwasher...) and create a task list.
+The monitor then predicts the best schedule to maximize self-consumption.
+When the time comes, it communicates through the Internet of Things (IoT) with the appliances to turn them on and off.
+This can also be done with simple smart plugs, there is no need to replace old machines.
+
+We currently are a team of 4 students: two engineering, one business and one law student.
+We are hosted by the [Yncubator](https://www.yncubator.be), and we follow the entrepreneurship program of our university ([CPME](https://uclouvain.be/en/faculties/lsm/cpme)).
+The prototype is in development.
+
+<center><img class="image" src="{{ site.url }}/assets/images/sunsei_gif.gif" alt="Alt Text"></center>
