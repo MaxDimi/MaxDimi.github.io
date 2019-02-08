@@ -15,6 +15,7 @@ picture: assets/images/Max.jpg
 resume: true
 resume-external: false
 resume-url: resume
+cv_pdf: assets/CV_Maxime_Dimidschstein.pdf
 
 #url: https://koppl.in/indigo # TODO
 # your url: http://USERNAME.github.io
@@ -22,7 +23,7 @@ resume-url: resume
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+analytics-google: 'UA-134185622-1'
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
@@ -40,7 +41,7 @@ permalink: /:title/
 # instagram: myinstagram
 # pinterest: mypinterest
 linkedin: maxime-dimidschstein-392b7315a
-# youtube: myyoutube #TODO
+youtube: https://youtu.be/ZmE7_67p6yA #TODO
 # spotify: myspotify
 github: MaxDimi # TODO CLEAN UP
 # gitlab: mygitlab
@@ -80,7 +81,7 @@ width: large
 projects: true
 
 # if you don't need "about" or "blog", comment them out below
-about: false #TODO
+about: true
 blog: false
 
 # do you want to show the "read time" of the posts?

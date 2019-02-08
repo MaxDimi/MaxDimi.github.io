@@ -1,7 +1,7 @@
 ---
 title: "Analyzing IRA tweets" #TODO pictogram
 layout: post
-date: 2019-01-21 10:00
+date: 2018-12-30 10:00
 tag:
 - Data Science
 - Python
