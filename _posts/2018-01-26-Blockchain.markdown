@@ -6,7 +6,7 @@ tag:
 - Go
 - Blockchain
 - Decentralized systems
-image: assets/images/trolltweet.png # TODO picture
+image: assets/images/blockchain.png # TODO picture
 image-external: false
 headerImage: true
 projects: true

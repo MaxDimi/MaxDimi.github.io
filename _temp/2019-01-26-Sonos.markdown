@@ -13,7 +13,7 @@ headerImage: true
 projects: false #TODO
 hidden: true # don't count this post in blog pagination
 description: "Analyzing data collected on the Sonos system at home."
-category: project
+category: blog #TODO
 #author: johndoe
 externalLink: false
 ---
