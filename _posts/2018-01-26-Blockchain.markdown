@@ -19,6 +19,7 @@ externalLink: false
 ---
 
 Learning the basics of blockchain by building a decentralized application in Go.
+[Github Repository](https://github.com/MaxDimi/Peerster).
 
 ---
 
