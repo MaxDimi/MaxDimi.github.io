@@ -20,7 +20,7 @@ exclude: [vendor]
 author:
     name: Maxime Dimidschstein
     title: Computer Engineering Student
-    address: Brussels, Belgium
+    address: Montreal, Quebec
     email: maxime.dimidschstein#gmail.com
     link: #site.url
     weibo:
@@ -47,18 +47,36 @@ author:
           </ul>"
     workHistory:
         - work1:
+          company: SmartD Technologies Inc.
+          location: Montreal, Quebec
+          title: IIoT Embedded Linux Developer
+          started: 2019
+          duration: (2019 - Present)
+          description: "Development of a new generation of variable frequency drives (VFD):\
+          <ul>
+          <li>Implementing IoT micro-services in Go following SOLID principles</li>
+          <li>Generating a Redis database and using the pub/sub mechanisms for communication between services</li>
+          <li>Creating a gRPC API with protobuf</li>
+          <li>Putting a CI infrastructure in place using Docker and AWS EC2 instances, running unit tests and automatic deployments on AWS S3</li>
+          <li>Creating Yocto recipes to tailor the Linux distribution to the product's needs</li>
+          <li>Developing various Bash utilities</li>
+          <li>Conceiving, improving and documenting IoT micro-services designs using tools such as UML diagrams and sequence diagrams</li>
+          <li>Understanding the requirements expressed by the marketing team and the customers</li>
+          <li>Taking part in interviewing and onboarding of new employees</li>
+          </ul>"
+        - work2:
           company: Ecole Polytechnique de Louvain
           location: Louvain-la-Neuve, Belgium
           title: Student Tutor
-          started: 2016
-          duration: (2016 - Present)
+          started: 2015
+          duration: (2015 - 2019)
           description: "Giving exercise sessions for different bachelor courses of the Engineering degree:\
           <ul>
-          <li>Mathematics (Bac. 1)</li>
-          <li>Computer Systems (Bac. 2)</li>
-          <li>Computer Networks (Bac. 3)</li>
+          <li>Mathematics</li>
+          <li>Computer Systems</li>
+          <li>Computer Networks</li>
           </ul>"
-        - work2:
+        - work3:
           company: TechnoFuturTIC Gosselies
           location: Gosselies, Belgium
           title: Programming Course Instructor
@@ -69,13 +87,6 @@ author:
           <li>Java & Robocode</li>
           <li>Python & Raspberry Pi</li>
           </ul>"
-        - work3:
-          company: Ecole Polytechnique de Louvain
-          location: Louvain-la-Neuve, Belgium
-          title: Student Monitor
-          started: 2015
-          duration: (2015 - 2016)
-          description: "Academic support in mathematics for first year Engineering students."
     educationHistory:
         - education1:
           organization: Université Catholique de Louvain
@@ -107,17 +118,17 @@ author:
           proficiency: Professional
     programmingSkills:
         - skill1:
-          name: Python
-          percentage: 90%
+          name: Go
+          percentage: 100%
         - skill2:
-          name: Java
-          percentage: 82%
+          name: Python
+          percentage: 80%
         - skill3:
           name: C
-          percentage: 74%
-        - skill4:
-          name: Matlab
           percentage: 70%
+        - skill4:
+          name: Bash
+          percentage: 60%
         - skill5:
           name: SQL
           percentage: 70%
@@ -127,67 +138,57 @@ author:
         - skill7:
           name: R
           percentage: 50%
-    webSkills:
-        - skill1:
-          name: WordPress
-          percentage: 70%
-        - skill2:
-          name: HTML, PHP
-          percentage: 60%
-        - skill3:
-          name: Android Studio
-          percentage: 60%
     toolSkills:
         - skill1:
-          name: LaTeX
+          name: Redis
           percentage: 90%
         - skill2:
-          name: Git
+          name: SQL
+          percentage: 75%
+        - skill3:
+          name: Git & CI
           percentage: 65%
-        - skill1:
+        - skill4:
           name: Raspberry Pi
           percentage: 60%
-        - skill3:
-          name: FPGA
-          percentage: 50%
 ---
 <div class="container-fluid">
     <div class="row-fluid">
         <div class="col-md-8">
-            {% if page.author.educationHistory %}
-                <h3 class="title with-icon"><span class="fa fa-graduation-cap cat-title"></span>Education</h3>
+            {% if page.author.workHistory %}
+                <h3 class="title with-icon"><span class="fa fa-institution cat-title"></span>Experience</h3>
                 <ul class="timeline">
-                    {% for education in page.author.educationHistory %}
+                    {% for work in page.author.workHistory %}
                         <li class="timeline-inverted">
-                            {% if education.started %}
-                                <div class="timeline-badge info">{{ education.started }}</div>
+                            {% if work.started %}
+                                <div class="timeline-badge info">{{ work.started }}</div>
                             {% endif %}
                             <div class="timeline-panel grid-block">
                                 <div class="timeline-heading">
-                                    {% if education.organization %}
-                                        <h4 class="timeline-title">{{ education.organization }}</h4>
+                                    {% if work.company %}
+                                        <h4 class="timeline-title">{{ work.company }} </h4>
                                     {% endif %}
                                     <p>
                                         <small class="text-muted">
-                                            {% if education.degree %}
-                                                {{ education.degree }}, {{ education.major }}
+                                            {% if work.title %}
+                                                {{ work.title }}
                                             {% endif %}
                                         </small>
                                     </p>
                                     <p>
                                         <small class="text-muted">
-                                            {% if education.duration %}
-                                                <i class="fa fa-calendar"></i> {{ education.duration }} |
+                                            {% if work.duration %}
+                                                <i class="fa fa-calendar"></i> {{ work.duration }} |
                                             {% endif %}
-                                            {% if education.location %}
-                                                <i class="fa fa-map-marker"></i>  {{ education.location }}
+                                            {% if work.location %}
+                                                <i class="fa fa-map-marker"></i>  {{ work.location }}
                                             {% endif %}
                                         </small>
                                     </p>
                                 </div>
                                 <div class="timeline-body">
-                                    {% if education.description %}
-                                        <p>{{ education.description }}</p>
+                                    {% if work.description %}
+                                        <p>{{ work.description }}</p>
                                     {% endif %}
                                 </div>
                             </div>
@@ -236,40 +237,40 @@ author:
                     {% endfor %}
                 </ul>
             {% endif %}
-            {% if page.author.workHistory %}
-                <h3 class="title with-icon"><span class="fa fa-institution cat-title"></span>Experience</h3>
+            {% if page.author.educationHistory %}
+                <h3 class="title with-icon"><span class="fa fa-graduation-cap cat-title"></span>Education</h3>
                 <ul class="timeline">
-                    {% for work in page.author.workHistory %}
+                    {% for education in page.author.educationHistory %}
                         <li class="timeline-inverted">
-                            {% if work.started %}
-                                <div class="timeline-badge info">{{ work.started }}</div>
+                            {% if education.started %}
+                                <div class="timeline-badge info">{{ education.started }}</div>
                             {% endif %}
                             <div class="timeline-panel grid-block">
                                 <div class="timeline-heading">
-                                    {% if work.company %}
-                                        <h4 class="timeline-title">{{ work.company }} </h4>
+                                    {% if education.organization %}
+                                        <h4 class="timeline-title">{{ education.organization }}</h4>
                                     {% endif %}
                                     <p>
                                         <small class="text-muted">
-                                            {% if work.title %}
-                                                {{ work.title }}
+                                            {% if education.degree %}
+                                                {{ education.degree }}, {{ education.major }}
                                             {% endif %}
                                         </small>
                                     </p>
                                     <p>
                                         <small class="text-muted">
-                                            {% if work.duration %}
-                                                <i class="fa fa-calendar"></i> {{ work.duration }} |
+                                            {% if education.duration %}
+                                                <i class="fa fa-calendar"></i> {{ education.duration }} |
                                             {% endif %}
-                                            {% if work.location %}
-                                                <i class="fa fa-map-marker"></i>  {{ work.location }}
+                                            {% if education.location %}
+                                                <i class="fa fa-map-marker"></i>  {{ education.location }}
                                             {% endif %}
                                         </small>
                                     </p>
                                 </div>
                                 <div class="timeline-body">
-                                    {% if work.description %}
-                                        <p>{{ work.description }}</p>
+                                    {% if education.description %}
+                                        <p>{{ education.description }}</p>
                                     {% endif %}
                                 </div>
                             </div>
